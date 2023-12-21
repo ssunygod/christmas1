@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "HSJiptokki-Round";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSJiptokki-Round.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'seolleimcool-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+/* 헤더 공간 */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 157, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+/* z축(깊이)를 기준으로 화면 앞으로 나오게 하거나 뒤로가게 한다 */
+  z-index: 100;
+}
+  header h1 {
+    font-family: "HSJiptokki-Round";
+    font-size: 2.6em;
+    color: white;
+  }
+
+
+/* 전체 섹션에 대한 디자인 */
+section {
+  height: 100vh;
+  /* border를 이용해서 가이드작성 - 디자인 후 지우기 */
+ 
+}
+
+/* 섹션1 - 배경사진과 글자 위치 */
+.s1 {
+    background-image: url(haeundae-beach-3838960_1280.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* 글자를 조금 띄우고, 글자 색상 변경 */
+.word {
+  position: relative;
+  left: 30px;
+  font-size: 1.3em;
+  color: aqua;
+  font-family: 'seolleimcool-SemiBold';
+
+}
+
+/* 섹션2에서 그림 추가 */
+.gallery {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.box {
+  width: 400px;
+  height: 90vh;
+  background-color: grey;
+  /* 마진값을 하나만 넣으면 위, 아래,양옆에 적용
+  마진값을 두개를 넣으면 위아래 / 양옆으로 각각 적용 */
+  margin: 5px;
+  border-radius: 25px;
+
+}
+.pic1 {
+  background-image: url(gamcheon-culture-village-6591589_1280.jpg);
+  /* 이미지의 크기를 맞춘다 */
+  background-size: cover;
+  /* 이미지의 위치를 이동한다 */
+  /* 이미지의 위치는 left, center, right로 이동가능 */
+  background-position: center;
+
+  
+}
+.pic2 {
+  background-image: url(night-view-7943221_640.jpg);
+  /* 이미지의 크기를 맞춘다 */
+  background-size: cover;
+  /* 이미지의 위치를 이동한다 */
+  background-position: center;
+  
+}
+.pic3 {
+  background-image: url(high-rise-buildings-7899651_640.jpg);
+  /* 이미지의 크기를 맞춘다 */
+  background-size: cover;
+  /* 이미지의 위치를 이동한다 */
+  background-position: :right;
+  
+  
+}
+/* 푸터에 대한 디자인 */
+footer {
+  height: 50px;
+  background-color: lightgray;
+  padding: 5px;
+  text-align: center;
+}
